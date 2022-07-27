@@ -1,0 +1,32 @@
+@import "root/css/base/_polices.css";
+
+header{
+    display: grid;
+    grid-template-rows: 1fr 50px 2fr;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding-top : 20px;
+    padding-bottom: 10px;
+
+    img{
+        width:175px;
+    }
+}
+
+.header__location{
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-top: 2px solid none;
+    box-shadow: 2px 2px 5px lightgrey inset;
+
+    &__content{
+        align-self: center;
+        font-family: "Roboto";
+        font-weight: bold;
+    }
+}

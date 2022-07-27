@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto&display=swap");
 @import "root/css/base/_polices.css";
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 header {
   display: grid;
   grid-template-rows: 1fr 50px 2fr;
@@ -34,4 +28,4 @@ header {
   font-weight: bold;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=header.css.map */
