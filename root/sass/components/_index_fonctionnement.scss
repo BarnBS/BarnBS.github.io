@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     font-family: "Roboto";
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     h2{
         align-self: flex-start;
@@ -20,13 +20,19 @@
             flex-direction: row;
             justify-content: flex-start;
             gap:20px;
-            border:1px;
             border-radius: 20px;
             background-color: $lightgrey;
             box-shadow: 2px 2px 8px darken($lightgrey,10%);
             padding:18px;
             padding-right: 50px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+
+            &:hover{
+                background-color: lighten($color-primary,35%);
+                i{
+                    color: $color-primary;
+                }
+            }
 
             &__numbers{
                 position:relative;
@@ -37,7 +43,6 @@
                 padding-bottom: 3.5px;
                 padding-left:7px;
                 padding-right: 7px;
-                border:1px;
                 border-radius: 15px;;
                 background-color: $color-primary;
             }

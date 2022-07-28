@@ -84,6 +84,12 @@ header {
   padding-left: 20px;
   padding-right: 20px;
 }
+.header__exploration a:hover {
+  box-shadow: 3px 3px 8px #8c8c8c;
+}
+.header__exploration a:focus {
+  box-shadow: 3px 3px 8px #4d4d4d;
+}
 
 .fonctionnement {
   display: flex;
@@ -91,7 +97,7 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "Roboto";
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .fonctionnement h2 {
   align-self: flex-start;
@@ -103,13 +109,18 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   gap: 20px;
-  border: 1px;
   border-radius: 20px;
   background-color: #F2F2F2;
   box-shadow: 2px 2px 8px #d9d9d9;
   padding: 18px;
   padding-right: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+.fonctionnement__list__body:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement__list__body:hover i {
+  color: #9356DC;
 }
 .fonctionnement__list__body__numbers {
   position: relative;
@@ -120,7 +131,6 @@ header {
   padding-bottom: 3.5px;
   padding-left: 7px;
   padding-right: 7px;
-  border: 1px;
   border-radius: 15px;
   background-color: #9356DC;
 }
@@ -136,6 +146,63 @@ header {
   left: -22px;
   align-self: center;
   color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.cards-restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F2F2F2;
+  font-family: "Roboto";
+  padding-top: 30px;
+}
+.cards-restaurants h2 {
+  align-self: flex-start;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.cards-restaurants__card-unit {
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px #d9d9d9;
+  margin-bottom: 20px;
+}
+.cards-restaurants__card-unit img {
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 300px;
+  height: 130px;
+}
+.cards-restaurants__card-unit__card-body {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+.cards-restaurants__card-unit__card-body h3 {
+  font-size: 15px;
+}
+.cards-restaurants__card-unit__card-body p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+.cards-restaurants__card-unit__card-body i {
+  font-size: 20px;
+  color: #bfbfbf;
+}
+.cards-restaurants__card-unit__card-body i:hover {
+  color: #9356DC;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
