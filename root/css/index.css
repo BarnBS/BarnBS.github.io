@@ -91,13 +91,50 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "Roboto";
+  margin-bottom: 30px;
 }
 .fonctionnement h2 {
   align-self: flex-start;
   padding: 20px;
   font-size: 20px;
 }
+.fonctionnement__list__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  box-shadow: 2px 2px 8px #d9d9d9;
+  padding: 18px;
+  padding-right: 50px;
+  margin-bottom: 10px;
+}
+.fonctionnement__list__body__numbers {
+  position: relative;
+  left: -22px;
+  font-size: 11px;
+  color: white;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border: 1px;
+  border-radius: 15px;
+  background-color: #9356DC;
+}
+.fonctionnement__list__body p {
+  position: relative;
+  left: -22px;
+  align-self: center;
+  font-size: 13px;
+  font-weight: 500;
+}
 .fonctionnement i {
+  position: relative;
+  left: -22px;
+  align-self: center;
   color: grey;
 }
 

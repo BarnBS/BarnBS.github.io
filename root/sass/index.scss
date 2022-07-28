@@ -7,20 +7,4 @@
 
 @import "layout/header.scss";
 
-.fonctionnement{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto";
-
-    h2{
-        align-self: flex-start;
-        padding:20px;
-        font-size: 20px;
-    }
-
-    i{
-        color:grey;
-    }
-}
+@import "components/_fonctionnement.scss"
