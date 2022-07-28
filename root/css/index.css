@@ -162,6 +162,7 @@ a {
   background-color: #F2F2F2;
   font-family: "Roboto";
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .cards-restaurants h2 {
   align-self: flex-start;
@@ -203,6 +204,30 @@ a {
 .cards-restaurants__card-unit__card-body i:hover {
   color: #9356DC;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #2e2e2e;
+  font-family: "Roboto";
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+footer img {
+  -webkit-filter: invert(1);
+  width: 100px;
+  margin-bottom: 20px;
+}
+footer a, footer i {
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+footer a {
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,5 +1,3 @@
-$lightgrey:#F2F2F2;
-
 a{
     text-decoration: none;
     color: black;
@@ -14,6 +12,7 @@ a{
     background-color: $lightgrey;
     font-family: "Roboto";
     padding-top: 30px;
+    padding-bottom: 30px;
 
     h2{
         align-self: flex-start;
