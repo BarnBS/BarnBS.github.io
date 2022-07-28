@@ -1,5 +1,5 @@
 @import "css/base/_polices.css";
-// @import "sass-xutils/_variables.scss";
+// @import "sass-utils/_variables.scss";
 
 $color-primary:#9356DC;
 $color-seconday:#FF79DA;
@@ -7,7 +7,7 @@ $color-tertiary:#99E2D0;
 
 header{
     display: grid;
-    grid-template-rows: 60px 50px 280px;
+    grid-template-rows: 60px 50px 260px;
 }
 
 .header__logo{
@@ -51,6 +51,7 @@ header{
     align-items: center;
     background-color: #F2F2F2;
     padding-bottom:20px;
+    margin-bottom: 20px;
         h1{
             display: flex;
             flex-direction: column;
@@ -68,6 +69,7 @@ header{
             font-family: "Roboto";
             font-size: 16px;
             color : grey;
+            margin-bottom: 30px;
         }
         a{
             display: flex;
@@ -81,8 +83,8 @@ header{
             border: 0px;
             border-radius: 25px;
             padding:13px;
-            padding-left: 18px;
-            padding-right: 18px;
-            margin-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 }
+

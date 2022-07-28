@@ -7,7 +7,7 @@
 
 header {
   display: grid;
-  grid-template-rows: 60px 50px 280px;
+  grid-template-rows: 60px 50px 260px;
 }
 
 .header__logo {
@@ -48,6 +48,7 @@ header {
   align-items: center;
   background-color: #F2F2F2;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .header__exploration h1 {
   display: flex;
@@ -66,6 +67,7 @@ header {
   font-family: "Roboto";
   font-size: 16px;
   color: grey;
+  margin-bottom: 30px;
 }
 .header__exploration a {
   display: flex;
@@ -79,9 +81,24 @@ header {
   border: 0px;
   border-radius: 25px;
   padding: 13px;
-  padding-left: 18px;
-  padding-right: 18px;
-  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+.fonctionnement h2 {
+  align-self: flex-start;
+  padding: 20px;
+  font-size: 20px;
+}
+.fonctionnement i {
+  color: grey;
 }
 
 /*# sourceMappingURL=index.css.map */
