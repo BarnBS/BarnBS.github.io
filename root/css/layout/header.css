@@ -1,17 +1,81 @@
-/* Error: Undefined variable.
- *    ,
- * 24 |     background-color: $lightgrey;
- *    |                       ^^^^^^^^^^
- *    '
- *   sass\layout\header.scss 24:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 24 \2502      background-color: $lightgrey;\d\a    \2502                        ^^^^^^^^^^\a    \2575 \a   sass\\layout\\header.scss 24:23  root stylesheet";
+@import "css/base/_polices.css";
+header {
+  display: grid;
+  grid-template-rows: 60px 50px 280px;
 }
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.header__logo img {
+  width: 160px;
+}
+
+.header__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: #e5e5e5;
+  color: #4d4d4d;
+  border-top: 2px solid none;
+  box-shadow: 0px 3px 3px #d9d9d9 inset;
+}
+.header__location__content {
+  align-self: center;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.header__location i {
+  align-self: center;
+  padding-right: 15px;
+}
+
+.header__exploration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding-bottom: 20px;
+}
+.header__exploration h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+}
+.header__exploration__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: grey;
+}
+.header__exploration a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: 0px;
+  border-radius: 25px;
+  padding: 13px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=header.css.map */

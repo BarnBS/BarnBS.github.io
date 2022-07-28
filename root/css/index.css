@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto&display=swap");
-@import "root/css/base/_polices.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@400;500&display=swap");
+@import "css/base/_polices.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,13 +7,13 @@
 
 header {
   display: grid;
-  grid-template-rows: 1fr 50px 2fr;
+  grid-template-rows: 60px 50px 280px;
 }
 
 .header__logo {
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -25,7 +25,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #F2F2F2;
+  width: 100%;
+  background-color: #e5e5e5;
   color: #4d4d4d;
   border-top: 2px solid none;
   box-shadow: 0px 3px 3px #d9d9d9 inset;
@@ -33,11 +34,54 @@ header {
 .header__location__content {
   align-self: center;
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: 500;
 }
 .header__location i {
   align-self: center;
   padding-right: 15px;
+}
+
+.header__exploration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding-bottom: 20px;
+}
+.header__exploration h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+}
+.header__exploration__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: grey;
+}
+.header__exploration a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: 0px;
+  border-radius: 25px;
+  padding: 13px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
