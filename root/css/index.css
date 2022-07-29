@@ -5,6 +5,16 @@
   margin: 0;
 }
 
+@media screen and (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
 header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -22,6 +32,11 @@ header {
 .section-location-exploration {
   display: grid;
   grid-template-rows: 60px 260px;
+}
+@media screen and (min-width: 600px) {
+  .section-location-exploration {
+    grid-area: 1/1/3/2;
+  }
 }
 
 .header__location {
@@ -50,6 +65,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-color: #F2F2F2;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -101,13 +117,26 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   font-family: "Roboto";
   margin-bottom: 40px;
+}
+@media screen and (min-width: 600px) {
+  .fonctionnement {
+    grid-area: 3/1/5/2;
+    position: relative;
+    top: -260px;
+  }
 }
 .fonctionnement h2 {
   align-self: flex-start;
   padding: 20px;
   font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+  .fonctionnement h2 {
+    align-self: center;
+  }
 }
 .fonctionnement__list__body {
   display: flex;
@@ -169,11 +198,21 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+@media screen and (min-width: 600px) {
+  .cards-restaurants {
+    grid-area: 1/2/5/3;
+  }
+}
 .cards-restaurants h2 {
   align-self: flex-start;
   padding: 20px;
   font-size: 20px;
   font-family: "Roboto";
+}
+@media screen and (min-width: 600px) {
+  .cards-restaurants h2 {
+    align-self: center;
+  }
 }
 .cards-restaurants__card-unit {
   width: auto;

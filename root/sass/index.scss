@@ -1,9 +1,8 @@
-*{
-    box-sizing: border-box;
-    margin:0;
-}
+@import "utils/_map-breakpoints.scss";
 
 @import "base/_polices.scss";
+
+@import "base/_typography.scss";
 
 @import "layout/header.scss";
 
@@ -13,4 +12,4 @@
 
 @import "components/_index_cards-restaurants.scss";
 
-@import "layout/footer.scss"
+@import "layout/footer.scss";

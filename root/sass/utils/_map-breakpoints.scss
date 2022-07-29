@@ -1,5 +1,4 @@
-$breakpoints: {
-    mobile : 600px /* max-width*/
-    tablet : 991px /* max-width*/
+$breakpoints: (
+    tablet : 600px, /* min-width*/
     desktop : 992px /* min-width*/
-};
+);

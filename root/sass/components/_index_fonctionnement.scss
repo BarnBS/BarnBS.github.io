@@ -3,13 +3,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:100%;
     font-family: "Roboto";
     margin-bottom: 40px;
+
+    @media screen and (min-width : map-get($breakpoints,tablet)) {
+        grid-area: 3 / 1 / 5 / 2;
+        position:relative;
+        top:-260px;
+    }
 
     h2{
         align-self: flex-start;
         padding:20px;
         font-size: 20px;
+
+        @media screen and (min-width : map-get($breakpoints,tablet)) {
+            align-self: center;
+        }
     }
 
 
