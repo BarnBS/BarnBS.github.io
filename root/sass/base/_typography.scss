@@ -12,5 +12,14 @@ main{
         grid-column-gap: 0px;
         grid-row-gap: 0px; 
     }
-    
+
+    @media screen and (min-width : map-get($breakpoints,desktop)) {
+        max-width: 1400px;
+        margin:0,auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 150px) repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    }
 }

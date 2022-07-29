@@ -14,6 +14,17 @@
     grid-row-gap: 0px;
   }
 }
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 1400px;
+    margin: 0, auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px) repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
 
 header {
   padding-top: 20px;
@@ -25,6 +36,12 @@ header {
   justify-content: center;
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .header__logo {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+}
 .header__logo img {
   width: 160px;
 }
@@ -34,6 +51,11 @@ header {
   grid-template-rows: 60px 260px;
 }
 @media screen and (min-width: 600px) {
+  .section-location-exploration {
+    grid-area: 1/1/3/2;
+  }
+}
+@media screen and (min-width: 992px) {
   .section-location-exploration {
     grid-area: 1/1/3/2;
   }
@@ -128,6 +150,12 @@ header {
     top: -260px;
   }
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement {
+    grid-area: 1/2/3/3;
+    top: 0;
+  }
+}
 .fonctionnement h2 {
   align-self: flex-start;
   padding: 20px;
@@ -203,6 +231,16 @@ a {
     grid-area: 1/2/5/3;
   }
 }
+@media screen and (min-width: 992px) {
+  .cards-restaurants {
+    grid-area: 3/1/5/3;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 .cards-restaurants h2 {
   align-self: flex-start;
   padding: 20px;
@@ -212,6 +250,11 @@ a {
 @media screen and (min-width: 600px) {
   .cards-restaurants h2 {
     align-self: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cards-restaurants h2 {
+    display: none;
   }
 }
 .cards-restaurants__card-unit {
@@ -253,6 +296,7 @@ a {
 footer {
   display: flex;
   flex-direction: column;
+  max-width: 1400px;
   background-color: #2e2e2e;
   font-family: "Roboto";
   font-size: 14px;

@@ -16,6 +16,11 @@ header{
     justify-content: center;
     width: 100%;
 
+    @media screen and (min-width : map-get($breakpoints,desktop)) {
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+
     img{
         width:160px;
     }
