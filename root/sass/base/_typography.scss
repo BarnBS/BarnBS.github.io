@@ -3,23 +3,7 @@
     margin:0;
 }
 
-main{
-
-    @media screen and (min-width : map-get($breakpoints,tablet)) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px; 
-    }
-
-    @media screen and (min-width : map-get($breakpoints,desktop)) {
-        max-width: 1400px;
-        margin:auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 150px) repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px; 
-    }
-}
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$lightgrey:#F2F2F2;
