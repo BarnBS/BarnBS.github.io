@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@400;500&family=Shrikhand&display=swap");
 @import "css/base/_polices.css";
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  main {
+  .index-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -15,7 +15,7 @@
   }
 }
 @media screen and (min-width: 992px) {
-  main {
+  .index-main {
     max-width: 1400px;
     margin: auto;
     display: grid;
@@ -293,6 +293,19 @@ a {
 .cards-restaurants__card-unit__card-body i:hover {
   color: #9356DC;
   cursor: pointer;
+}
+
+.restaurant-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu-section__titre {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+}
+.menu-section__titre h1 {
+  font-family: "Shrikhand";
 }
 
 footer {
