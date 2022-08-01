@@ -318,16 +318,128 @@ a {
 .restaurant-image img {
   object-fit: cover;
   width: 100%;
+  max-height: 300px;
 }
 
+.menu-section {
+  position: relative;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #F2F2F2;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  margin-bottom: -60px;
+}
+@media screen and (min-width: 600px) {
+  .menu-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(1, 1fr) 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    padding-bottom: 0;
+    padding-top: 10px;
+    margin-bottom: -60px;
+  }
+}
 .menu-section__titre {
   display: grid;
-  grid-template-columns: 1fr 40px;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .menu-section__titre {
+    grid-area: 1/1/2/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+  }
 }
 .menu-section__titre h1 {
   font-family: "Shrikhand";
 }
-
+.menu-section__titre i {
+  display: flex;
+  align-self: center;
+  justify-content: end;
+  font-size: larger;
+}
+.menu-section__course {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+  gap: 10px;
+  font-family: "Roboto";
+}
+@media screen and (min-width: 600px) {
+  .menu-section__course #menu-section_course1 {
+    grid-area: 2/1/3/2;
+  }
+  .menu-section__course #menu-section_course2 {
+    grid-area: 2/2/3/3;
+  }
+  .menu-section__course #menu-section_course3 {
+    grid-area: 2/3/3/4;
+  }
+}
+.menu-section__course h2 {
+  font-family: "Roboto";
+  font-size: smaller;
+  font-weight: 400;
+  margin-bottom: -5px;
+}
+.menu-section__course h2 span {
+  position: relative;
+  top: -10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #99E2D0;
+}
+.menu-section__course__dish {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+.menu-section__course__dish__title {
+  font-weight: 600;
+}
+.menu-section__course__dish__description {
+  font-size: smaller;
+}
+.menu-section__course__dish__price {
+  display: flex;
+  align-items: flex-end;
+  font-size: smaller;
+  font-weight: 600;
+}
+.menu-section a {
+  cursor: pointer;
+}
+.menu-section__commander {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 200px;
+  color: white;
+  font-family: "Roboto";
+  font-size: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  padding: 13px;
+  margin-top: 30px;
+}
 footer {
   display: flex;
   flex-direction: column;
