@@ -5,20 +5,39 @@ header{
     margin:auto;
     padding-top: 20px;
     padding-bottom: 20px;
-}
 
-.header__logo{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    i{
+        position: absolute;
+        top: 25px;
+        left:30px;
+        font-size: larger;
 
-    @media screen and (min-width : map-get($breakpoints,desktop)) {
-        justify-content: flex-start;
-        padding-left: 50px;
+        &:hover{
+            cursor: pointer;
+        }
+
+        @media screen and (min-width : map-get($breakpoints,desktop)) {
+            position: relative;
+            top: 5px;
+            left:-25px;
+        }
+    }
+    
+    .header__logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        @media screen and (min-width : map-get($breakpoints,desktop)) {
+            justify-content: flex-start;
+            padding-left: 60px;
+        }
+
+        img{
+            width:160px;
+        }
     }
 
-    img{
-        width:160px;
-    }
 }
+
 

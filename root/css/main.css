@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
 @media screen and (min-width: 600px) {
   .index-main {
     display: grid;
@@ -32,19 +37,34 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-.header__logo {
+header i {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  font-size: larger;
+}
+header i:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  header i {
+    position: relative;
+    top: 5px;
+    left: -25px;
+  }
+}
+header .header__logo {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 @media screen and (min-width: 992px) {
-  .header__logo {
+  header .header__logo {
     justify-content: flex-start;
-    padding-left: 50px;
+    padding-left: 60px;
   }
 }
-.header__logo img {
+header .header__logo img {
   width: 160px;
 }
 
