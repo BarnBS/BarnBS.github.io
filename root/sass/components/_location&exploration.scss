@@ -24,7 +24,7 @@
 
     &__content{
         align-self: center;
-        font-family: "Roboto";
+        @include main-font;
         font-weight: 500;
     }
 
@@ -51,7 +51,7 @@
             justify-content: center;
             align-items: center;
             font-size: 23px;
-            font-family: "Roboto";
+            @include main-font;
             margin-bottom: 10px;
         }
         &__description{
@@ -59,7 +59,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-family: "Roboto";
+            @include main-font;
             font-size: 16px;
             color : grey;
             margin-bottom: 30px;
