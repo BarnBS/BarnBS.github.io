@@ -436,6 +436,9 @@ a {
   width: 100%;
   padding: 10px;
 }
+.menu-section__course__dish:hover > .menu-section__course__dish__check {
+  background-color: red;
+}
 .menu-section__course__dish__title {
   font-weight: 600;
 }
@@ -447,6 +450,27 @@ a {
   align-items: flex-end;
   font-size: smaller;
   font-weight: 600;
+}
+.menu-section__course__dish__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  width: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99E2D0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.menu-section__course__dish__check i {
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 25px;
+  padding: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .menu-section a {
   cursor: pointer;
