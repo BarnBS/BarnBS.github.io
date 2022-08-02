@@ -318,7 +318,7 @@ a {
 .restaurant-image img {
   object-fit: cover;
   width: 100%;
-  max-height: 300px;
+  height: 250px;
 }
 
 .menu-section {
@@ -408,6 +408,7 @@ a {
   justify-content: space-between;
   background-color: white;
   border-radius: 15px;
+  box-shadow: 2px 2px 8px #d9d9d9;
   padding: 10px;
 }
 .menu-section__course__dish__title {
