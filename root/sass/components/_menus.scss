@@ -118,7 +118,21 @@
             padding: 10px;
             
             &:hover > &__check{
-                background-color: red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left:61px; //10px de padding
+                width:50px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                background-color: $color-tertiary;
+                margin-top: -10px;
+                margin-bottom: -10px;
+                // transition: transform 330ms ease-in-out;
+                // transform: scale(1);
+                transform: translate(-50px,0);
+                // transition: translate 2000ms cubic-bezier(0, .75, .08, 1);
             }
 
             &__title{
@@ -139,17 +153,8 @@
             }
 
             &__check{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                left:10px;
-                width:50px;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
-                background-color: $color-tertiary;
-                margin-top: -10px;
-                margin-bottom: -10px;
+                display: none;
+                transform: scale(0.0001);
 
                 i{
                     color:$color-tertiary;

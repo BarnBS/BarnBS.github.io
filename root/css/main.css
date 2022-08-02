@@ -437,7 +437,18 @@ a {
   padding: 10px;
 }
 .menu-section__course__dish:hover > .menu-section__course__dish__check {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 61px;
+  width: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99E2D0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  transform: translate(-50px, 0);
 }
 .menu-section__course__dish__title {
   font-weight: 600;
@@ -452,17 +463,8 @@ a {
   font-weight: 600;
 }
 .menu-section__course__dish__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 10px;
-  width: 50px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #99E2D0;
-  margin-top: -10px;
-  margin-bottom: -10px;
+  display: none;
+  transform: scale(0.0001);
 }
 .menu-section__course__dish__check i {
   color: #99E2D0;
