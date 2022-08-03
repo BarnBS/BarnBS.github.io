@@ -1,63 +1,71 @@
 @keyframes appear{
-    from{
-        opacity:0.2;
-        transform: translateY(30px);
-        }  
-    to{
+    0%{
+        opacity:0;
+        transform: translateY(20px);
+        }
+    50%{
+        opacity:0;
+        transform: translateY(10px);
+    }
+    100%{
         opacity: 1;
         transform: translateY(0px);
     }
 }
 
 $delay:(
-    first-dish:400ms,
-    second-dish:800ms,
-    third-dish:1200ms,
-    fourth-dish:1400ms,
-    fifth-dish:1800ms,
-    sixth-dish:2200ms,
-    seventh-dish:2600ms,
-    heighth-dish:3200ms,
-    ninth-dish:3600ms,
-    tenth-dish:4200ms
+    first-dish:200ms,
+    second-dish:400ms,
+    third-dish:600ms,
+    fourth-dish:800ms,
 );
 
 #first-dish{
-    animation : appear map-get($delay,first-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,first-dish);
 }
 
 #second-dish{
-    animation : appear map-get($delay,second-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,second-dish);
 }
 
 #third-dish{
-    animation : appear map-get($delay,third-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,third-dish);
 }
 
 #fourth-dish{
-    animation : appear map-get($delay,fourth-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,first-dish);
 }
 
 #fifth-dish{
-    animation : appear map-get($delay,fifth-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,second-dish);
 }
 
 #sixth-dish{
-    animation : appear map-get($delay,sixth-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,third-dish);
 }
 
 #seventh-dish{
-    animation : appear map-get($delay,seventh-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,first-dish);
 }
 
-#heighth-dish{
-    animation : appear map-get($delay,heighth-dish) ease-out;
+#eighth-dish{
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,second-dish);
 }
 
 #ninth-dish{
-    animation : appear map-get($delay,ninth-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,third-dish);
 }
 
 #tenth-dish{
-    animation : appear map-get($delay,tenth-dish) ease-out;
+    animation : appear 1000ms ease-out;
+    animation-delay: map-get($delay,fourth-dish);
 }
