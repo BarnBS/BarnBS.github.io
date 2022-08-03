@@ -1,22 +1,3 @@
-@keyframes rotate360{
-    0%{
-        transform:rotate(0deg);
-    };
-    25%{
-        transform:rotate(90deg);
-    };
-    50%{
-        transform:rotate(180deg);
-    };
-    75%{
-        transform:rotate(270deg);
-    };
-    100%{
-        transform:rotate(360deg);
-    };
-}
-
-
 .restaurant-image{
 
     img{
@@ -141,38 +122,6 @@
             @media screen and  (min-width:map-get($breakpoints,desktop)){
                 width: 100%;
                 height: 60px;
-            }
-
-            &:hover > &__body{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                display: block;
-            }
-            
-            &:hover > &__check{
-                width: 100px;
-                transform: translate(-100px,0) ;
-
-                @media screen and  (min-width:map-get($breakpoints,desktop)){
-                    width: 30%;
-                    height: 60px;
-                }
-
-            }
-
-            &:hover >  &__price{
-                transition: 350ms;
-                transform: translate(-60px,0) ;
-                padding-left: 30px;
-
-                @media screen and  (min-width:map-get($breakpoints,desktop)){
-                    padding-left: 60px;
-                }
-            }
-
-            &:hover i{
-                animation: rotate360 350ms;
             }
 
             &__body{

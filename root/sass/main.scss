@@ -1,5 +1,7 @@
 @import "utils/_map-breakpoints.scss";
 
+@import "utils/variables";
+
 @import "base/_polices.scss";
 
 @import "base/_typography.scss";
@@ -15,5 +17,7 @@
 @import "components/_index_cards-restaurants.scss";
 
 @import "components/_menus.scss";
+
+@import "utils/animation-checkmarks";
 
 @import "layout/footer.scss";
