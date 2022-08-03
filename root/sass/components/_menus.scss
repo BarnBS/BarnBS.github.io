@@ -140,16 +140,35 @@
 
             @media screen and  (min-width:map-get($breakpoints,desktop)){
                 width: 100%;
+                height: 60px;
+            }
+
+            &:hover > &__body{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
             }
             
             &:hover > &__check{
-                transform: translate(-60px,0) ;
-                // transform: scaleX(1) ;
+                width: 100px;
+                transform: translate(-100px,0) ;
+
+                @media screen and  (min-width:map-get($breakpoints,desktop)){
+                    width: 30%;
+                    height: 60px;
+                }
+
             }
 
             &:hover >  &__price{
                 transition: 350ms;
                 transform: translate(-60px,0) ;
+                padding-left: 30px;
+
+                @media screen and  (min-width:map-get($breakpoints,desktop)){
+                    padding-left: 60px;
+                }
             }
 
             &:hover i{
@@ -157,8 +176,14 @@
             }
 
             &__body{
-                width: 240px;
+                width: 100%;
+                height:50px;
+                padding-right: -20px;
                 
+                @media screen and  (min-width:map-get($breakpoints,desktop)){
+                    display: block;
+                }
+
                 &__title{
                     font-weight: 600;
                 }
@@ -171,21 +196,24 @@
 
             &__price{
                 display: flex;
-                align-items: flex-end;
+                align-self: flex-end;
                 font-size: smaller;
+                position: relative;
+                left:40px;
                 font-weight: 600;
-                margin-right: -100px;
                 transition:transform 350ms;
 
                 @media screen and  (min-width:map-get($breakpoints,tablet)){
-                    margin-right: -80px;
+                    margin-right: -50px;
+                    padding-right: 20px;
                     position: relative;
-                    left:130px;
+                    left:0px;
                 }
 
                 @media screen and  (min-width:map-get($breakpoints,desktop)){
-                    margin-right: -100px;
                     left:0;
+                    padding-right: 5px;
+                    margin-left: 15px;
                 }
 
             }
@@ -195,13 +223,14 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                left:70px; //10px de padding
-                width:60px;
+                left:110px; //10px de padding
+                width: 70px;
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
                 background-color: $color-tertiary;
                 margin-top: -10px;
                 margin-bottom: -10px;
+                margin-left: -20px;
                 transition:transform 350ms;
                 transform-origin:-100% 0;
 
