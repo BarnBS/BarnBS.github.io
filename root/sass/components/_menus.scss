@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap : 20px;
     background-color: $lightgrey;
     border-top-left-radius: 25px;
@@ -31,7 +31,6 @@
         grid-row-gap: 0px; 
         padding-bottom: 30px;
         padding-top: 10px;
-        ;
     }
 
     &__titre{
@@ -49,7 +48,7 @@
             grid-area: 1 / 1 / 2 / 4;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         
         h1{
@@ -64,6 +63,7 @@
             align-self: center;
             justify-content: end;
             font-size: larger;
+
             @media screen and  (min-width:map-get($breakpoints,tablet)){
                 position:absolute;
                 right:20px;
@@ -74,8 +74,6 @@
     &__course{
         display: flex;
         flex-direction: column;
-        // justify-content: center;
-        // align-self: center;
         width:100%;
         gap:10px;
         font-family: "Roboto";
@@ -106,6 +104,7 @@
         }
 
         &__dish{
+            overflow: hidden;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -113,48 +112,75 @@
             background-color: white;
             border-radius: 15px;
             box-shadow: 2px 2px 8px darken($lightgrey,10%);
-            max-width:400px;
             width:100%;
             padding: 10px;
+
+            @media screen and  (min-width:map-get($breakpoints,tablet)){
+                width: 560px;
+            }
+
+            @media screen and  (min-width:map-get($breakpoints,desktop)){
+                width: 100%;
+            }
             
             &:hover > &__check{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                left:61px; //10px de padding
-                width:50px;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
-                background-color: $color-tertiary;
-                margin-top: -10px;
-                margin-bottom: -10px;
-                // transition: transform 330ms ease-in-out;
-                // transform: scale(1);
-                transform: translate(-50px,0);
-                // transition: translate 2000ms cubic-bezier(0, .75, .08, 1);
+                transform: translate(-60px,0) ;
+                // transform: scaleX(1) ;
             }
 
-            &__title{
-                font-weight: 600;
+            &:hover >  &__price{
+                transition: 350ms;
+                transform: translate(-60px,0) ;
             }
 
-            &__description{
-                font-size: smaller;
+            &__body{
+                width: 240px;
+                
+                &__title{
+                    font-weight: 600;
+                }
+
+                &__description{
+                    font-size: smaller;
+                }
+
             }
 
             &__price{
                 display: flex;
                 align-items: flex-end;
                 font-size: smaller;
-                // position: relative;
-                // left:25px;
                 font-weight: 600;
+                margin-right: -100px;
+                transition:transform 350ms;
+
+                @media screen and  (min-width:map-get($breakpoints,tablet)){
+                    margin-right: -80px;
+                    position: relative;
+                    left:130px;
+                }
+
+                @media screen and  (min-width:map-get($breakpoints,desktop)){
+                    margin-right: -100px;
+                    left:0;
+                }
+
             }
 
             &__check{
-                display: none;
-                transform: scale(0.0001);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left:70px; //10px de padding
+                width:60px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                background-color: $color-tertiary;
+                margin-top: -10px;
+                margin-bottom: -10px;
+                transition:transform 350ms;
+                transform-origin:-100% 0;
 
                 i{
                     color:$color-tertiary;
@@ -185,7 +211,9 @@
         padding: 13px;
         margin-top: 30px;
 
-        // @media  screen and (min-width:map-get($breakpoints,tablet)) {
-        // }
+
+        @media  screen and (min-width:map-get($breakpoints,desktop)) {
+            margin-left: 20px;
+        }
     }
 }
