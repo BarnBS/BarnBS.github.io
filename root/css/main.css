@@ -449,9 +449,8 @@ a {
   }
 }
 .menu-section__course__dish__body {
-  gap: 20px;
   width: 100%;
-  height: 50px;
+  height: 40px;
   padding-right: -20px;
 }
 @media screen and (min-width: 992px) {
@@ -626,6 +625,10 @@ a {
 
 #ninth-dish {
   animation: appear 3600ms ease-out;
+}
+
+#tenth-dish {
+  animation: appear 4200ms ease-out;
 }
 
 footer {

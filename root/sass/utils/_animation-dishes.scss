@@ -18,7 +18,8 @@ $delay:(
     sixth-dish:2200ms,
     seventh-dish:2600ms,
     heighth-dish:3200ms,
-    ninth-dish:3600ms
+    ninth-dish:3600ms,
+    tenth-dish:4200ms
 );
 
 #first-dish{
@@ -55,4 +56,8 @@ $delay:(
 
 #ninth-dish{
     animation : appear map-get($delay,ninth-dish) ease-out;
+}
+
+#tenth-dish{
+    animation : appear map-get($delay,tenth-dish) ease-out;
 }
