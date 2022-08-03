@@ -434,6 +434,7 @@ a {
   border-radius: 15px;
   box-shadow: 2px 2px 8px #d9d9d9;
   width: 100%;
+  height: 70px;
   padding: 10px;
 }
 @media screen and (min-width: 600px) {
@@ -448,6 +449,7 @@ a {
   }
 }
 .menu-section__course__dish__body {
+  gap: 20px;
   width: 100%;
   height: 50px;
   padding-right: -20px;
@@ -550,34 +552,80 @@ a {
     transform: rotate(360deg);
   }
 }
-.menu-section__course__dish__dish:hover > .menu-section__course__dish__dish__body {
+.menu-section__course__dish:hover > .menu-section__course__dish__body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block;
 }
-.menu-section__course__dish__dish:hover > .menu-section__course__dish__dish__check {
+.menu-section__course__dish:hover > .menu-section__course__dish__check {
   width: 100px;
   transform: translate(-100px, 0);
 }
 @media screen and (min-width: 992px) {
-  .menu-section__course__dish__dish:hover > .menu-section__course__dish__dish__check {
+  .menu-section__course__dish:hover > .menu-section__course__dish__check {
     width: 30%;
     height: 60px;
   }
 }
-.menu-section__course__dish__dish:hover > .menu-section__course__dish__dish__price {
+.menu-section__course__dish:hover > .menu-section__course__dish__price {
   transition: 350ms;
   transform: translate(-60px, 0);
   padding-left: 30px;
 }
 @media screen and (min-width: 992px) {
-  .menu-section__course__dish__dish:hover > .menu-section__course__dish__dish__price {
+  .menu-section__course__dish:hover > .menu-section__course__dish__price {
     padding-left: 60px;
   }
 }
-.menu-section__course__dish__dish:hover i {
+.menu-section__course__dish:hover i {
   animation: rotate360 350ms;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.2;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#first-dish {
+  animation: appear 400ms ease-out;
+}
+
+#second-dish {
+  animation: appear 800ms ease-out;
+}
+
+#third-dish {
+  animation: appear 1200ms ease-out;
+}
+
+#fourth-dish {
+  animation: appear 1400ms ease-out;
+}
+
+#fifth-dish {
+  animation: appear 1800ms ease-out;
+}
+
+#sixth-dish {
+  animation: appear 2200ms ease-out;
+}
+
+#seventh-dish {
+  animation: appear 2600ms ease-out;
+}
+
+#heighth-dish {
+  animation: appear 3200ms ease-out;
+}
+
+#ninth-dish {
+  animation: appear 3600ms ease-out;
 }
 
 footer {

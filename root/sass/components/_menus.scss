@@ -113,6 +113,7 @@
             border-radius: 15px;
             box-shadow: 2px 2px 8px darken($lightgrey,10%);
             width:100%;
+            height:70px;
             padding: 10px;
 
             @media screen and  (min-width:map-get($breakpoints,tablet)){
@@ -125,6 +126,7 @@
             }
 
             &__body{
+                gap: 20px;
                 width: 100%;
                 height:50px;
                 padding-right: -20px;

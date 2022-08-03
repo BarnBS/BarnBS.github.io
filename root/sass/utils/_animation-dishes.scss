@@ -1,0 +1,58 @@
+@keyframes appear{
+    from{
+        opacity:0.2;
+        transform: translateY(30px);
+        }  
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+$delay:(
+    first-dish:400ms,
+    second-dish:800ms,
+    third-dish:1200ms,
+    fourth-dish:1400ms,
+    fifth-dish:1800ms,
+    sixth-dish:2200ms,
+    seventh-dish:2600ms,
+    heighth-dish:3200ms,
+    ninth-dish:3600ms
+);
+
+#first-dish{
+    animation : appear map-get($delay,first-dish) ease-out;
+}
+
+#second-dish{
+    animation : appear map-get($delay,second-dish) ease-out;
+}
+
+#third-dish{
+    animation : appear map-get($delay,third-dish) ease-out;
+}
+
+#fourth-dish{
+    animation : appear map-get($delay,fourth-dish) ease-out;
+}
+
+#fifth-dish{
+    animation : appear map-get($delay,fifth-dish) ease-out;
+}
+
+#sixth-dish{
+    animation : appear map-get($delay,sixth-dish) ease-out;
+}
+
+#seventh-dish{
+    animation : appear map-get($delay,seventh-dish) ease-out;
+}
+
+#heighth-dish{
+    animation : appear map-get($delay,heighth-dish) ease-out;
+}
+
+#ninth-dish{
+    animation : appear map-get($delay,ninth-dish) ease-out;
+}
