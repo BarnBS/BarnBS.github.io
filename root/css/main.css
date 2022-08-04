@@ -677,7 +677,7 @@ a {
   width: 100%;
   color: #4d4d4d;
   margin-bottom: -15px;
-  margin-left: -5px;
+  margin-left: -10px;
 }
 .loader__location__content {
   align-self: center;
@@ -686,7 +686,7 @@ a {
 }
 .loader p {
   width: 200px;
-  margin-left: 50px;
+  margin-left: 60px;
   padding-top: 20px;
   font-family: "Roboto";
 }
