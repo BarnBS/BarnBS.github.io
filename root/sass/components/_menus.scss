@@ -35,7 +35,7 @@
 
     &__titre{
         display: grid;
-        grid-template-columns: 1fr 40px;
+        grid-template-columns: 1fr 40px 40px;
         width: 100%;
 
         @media screen and  (min-width:map-get($breakpoints,tablet)){
@@ -53,20 +53,33 @@
         
         h1{
             @include title-font;
+
             @media screen and  (min-width:map-get($breakpoints,tablet)){
                 align-self: center;
             }
         }
 
-        i{
+        #back-heart{
+            display: flex;
+            overflow:hidden;
+            align-self: center;
+            justify-content: end;
+            font-size: 25px;
+            position: absolute;
+            right:20px;
+        }
+
+        #front-heart{
             display: flex;
             align-self: center;
             justify-content: end;
-            font-size: larger;
+            font-size: 17px;
+            color:white;
+            position:absolute;
+            right:24px;
 
-            @media screen and  (min-width:map-get($breakpoints,tablet)){
-                position:absolute;
-                right:20px;
+            &:hover{
+                transform : translateY(-30px);
             }
         }
     }

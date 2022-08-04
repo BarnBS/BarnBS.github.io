@@ -1,5 +1,5 @@
 .index-header, .index-main, .index-footer{
-    opacity: 0;
+    opacity: 0.1;
     animation: full-appear 3000ms forwards;
 }
 
@@ -35,11 +35,48 @@
         }
     }
 
-    p{
+    .loader__location__content{
         width:200px;
         margin-left: 60px;
         padding-top: 20px;
         @include main-font;
+        color : $color-secondary;
+    }
+
+    .loader__loading{
+        width:200px;
+        margin-left: 30px;
+        padding-top: 20px;
+        @include main-font;
+        color : $color-primary;
+
+        &__ball{
+            font-size: 50%;
+            border-radius: 25px;
+            padding:1px;
+            padding-right: 6px;
+            padding-left: 6px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            background:linear-gradient($color-secondary,$color-primary);
+
+            
+            // .first{
+            //     animation: bounce 300ms infinite;
+            // }
+
+            // .second{
+            //     animation-delay:200ms;
+            //     animation: bounce 300ms infinite;
+            // }
+
+            // .third{
+            //     animation-delay:400ms;
+            //     animation: bounce 300ms infinite;
+            // }
+        }
+
+
     }
 }
 
@@ -65,14 +102,22 @@
 
 @keyframes full-appear{
     0%{
-        opacity: 0;
+        opacity: 0.1;
     }
 
     90%{
-        opacity: 0;
+        opacity: 0.1;
     }
 
     100%{
         opacity: 1;
     }
 }
+
+// @keyframes bounce{
+//     0%{
+//         transform: translateY(0px);
+//     }
+//     100%{
+//         transform: translateY(50px);
+//     }
