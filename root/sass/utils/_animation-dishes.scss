@@ -20,6 +20,20 @@ $delay:(
     fourth-dish:800ms,
 );
 
+// $numbers:(
+//     1:1,
+//     2:2,
+//     3:3,
+//     4:4,
+// );
+
+// @each $key in $numbers and $key in $delay{
+//     .menu-section__course:nth-child(map-get($numbers,$key)){
+//         animation :appear 1000ms forwards;
+//         animation-delay: map-get($delay,$key);
+//     }
+// };
+
 #first-dish{
     animation :appear 1000ms forwards;
     animation-delay: map-get($delay,first-dish);
