@@ -51,7 +51,7 @@ $delay:(
 
 #fourth-dish{
     animation : appear 1000ms forwards;
-    animation-delay: map-get($delay,first-dish);
+    animation-delay: map-get($delay,fourth-dish);
 }
 
 #fifth-dish{
