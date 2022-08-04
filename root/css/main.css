@@ -657,7 +657,7 @@ a {
 
 .loader {
   position: fixed;
-  top: 40%;
+  top: 35%;
   left: 50%;
   display: flex;
   flex-direction: column;
@@ -670,9 +670,24 @@ a {
   width: 200px;
   animation: scaled 1500ms infinite;
 }
+.loader__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: #4d4d4d;
+  margin-bottom: -15px;
+  margin-left: -5px;
+}
+.loader__location__content {
+  align-self: center;
+  font-family: "Roboto";
+  font-weight: 500;
+}
 .loader p {
   width: 200px;
   margin-left: 50px;
+  padding-top: 20px;
   font-family: "Roboto";
 }
 
