@@ -391,6 +391,7 @@ a {
 .menu-section__course {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   width: 100%;
   gap: 10px;
   font-family: "Roboto";
@@ -434,7 +435,7 @@ a {
   border-radius: 15px;
   box-shadow: 2px 2px 8px #d9d9d9;
   width: 100%;
-  height: 70px;
+  height: 60px;
   padding: 10px;
   opacity: 0;
 }
@@ -446,12 +447,13 @@ a {
 @media screen and (min-width: 992px) {
   .menu-section__course__dish {
     width: 100%;
-    height: 60px;
   }
 }
 .menu-section__course__dish__body {
+  display: block;
   width: 100%;
   height: 40px;
+  height: 100%;
   padding-right: -20px;
 }
 @media screen and (min-width: 992px) {
@@ -473,6 +475,7 @@ a {
   left: 40px;
   font-weight: 600;
   transition: transform 350ms;
+  margin-left: -40px;
 }
 @media screen and (min-width: 600px) {
   .menu-section__course__dish__price {
@@ -572,6 +575,7 @@ a {
   transition: 350ms;
   transform: translate(-60px, 0);
   padding-left: 30px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 992px) {
   .menu-section__course__dish:hover > .menu-section__course__dish__price {
@@ -597,52 +601,52 @@ a {
   }
 }
 #first-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 200ms;
 }
 
 #second-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 400ms;
 }
 
 #third-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 600ms;
 }
 
 #fourth-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 200ms;
 }
 
 #fifth-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 400ms;
 }
 
 #sixth-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 600ms;
 }
 
 #seventh-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 200ms;
 }
 
 #eighth-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 400ms;
 }
 
 #ninth-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 600ms;
 }
 
 #tenth-dish {
-  animation: appear 1000ms ease-out;
+  animation: appear 1000ms forwards;
   animation-delay: 800ms;
 }
 
