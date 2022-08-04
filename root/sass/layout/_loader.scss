@@ -51,13 +51,14 @@
         color : $color-primary;
 
         &__ball{
+            position: relative;
+            top:-2px;
             font-size: 50%;
             border-radius: 25px;
             padding:1px;
             padding-right: 6px;
             padding-left: 6px;
             margin-left: 10px;
-            margin-bottom: 20px;
             background:linear-gradient($color-secondary,$color-primary);
 
             

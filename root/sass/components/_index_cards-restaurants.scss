@@ -42,6 +42,25 @@ a{
         }
 
     }
+
+    span{
+        position: relative;
+        top:20px;
+        left:85px;
+        font-size: 90%;
+        @include main-font;
+        color: darken($color-tertiary,40%);
+        background-color: $color-tertiary;
+        padding:4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: -25px;
+
+            @media screen and (min-width : map-get($breakpoints,desktop)) {
+                left : 290px;
+                margin-left: -95px;
+            }
+    }
     
     &__card-unit{
         width: auto;
@@ -73,13 +92,27 @@ a{
                 font-weight: lighter;
             }
 
-            i{
+            #index-back-heart{
                 font-size: 20px;
-                color:darken($lightgrey,20%);
                 
-                &:hover{
+                &:hover + #index-front-heart {
+                    transition: 500ms;
+                    transform : scale(1.4);
                     color:$color-primary;
                     cursor:pointer;
+                }
+            }
+
+            #index-front-heart{
+                color:white;
+                position: relative;
+                bottom:1.5px;
+                right:22px;
+
+                &:hover {
+                    transition: 500ms;
+                    transform : scale(1.4);
+                    color:$color-primary;
                 }
             }
         }

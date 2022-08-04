@@ -67,6 +67,12 @@
             font-size: 25px;
             position: absolute;
             right:20px;
+            
+            &:hover + #front-heart{
+                transition: 500ms;
+                transform : scale(1.5);
+                color: $color-primary;
+            }
         }
 
         #front-heart{
@@ -77,10 +83,16 @@
             color:white;
             position:absolute;
             right:24px;
+            transition: 700ms;
+            transform: scale(1);
+            cursor:pointer;
 
             &:hover{
-                transform : translateY(-30px);
+                transition: 500ms;
+                transform : scale(1.5);
+                color: $color-primary;
             }
+
         }
     }
 
