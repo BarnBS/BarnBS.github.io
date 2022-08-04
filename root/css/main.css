@@ -650,8 +650,13 @@ a {
   animation-delay: 800ms;
 }
 
+.index-header, .index-main, .index-footer {
+  opacity: 0;
+  animation: full-appear 3000ms forwards;
+}
+
 .loader {
-  position: absolute;
+  position: fixed;
   top: 40%;
   left: 50%;
   display: flex;
@@ -665,6 +670,12 @@ a {
   width: 200px;
   animation: scaled 1500ms infinite;
 }
+.loader p {
+  width: 200px;
+  margin-left: 50px;
+  font-family: "Roboto";
+}
+
 @keyframes scaled {
   0% {
     transform: scale(1);
@@ -676,12 +687,6 @@ a {
     transform: scale(1);
   }
 }
-
-.index-header, .index-main, .index-footer {
-  opacity: 0;
-  animation: full-appear 3000ms forwards;
-}
-
 @keyframes opacity {
   0% {
     opacity: 1;
