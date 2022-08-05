@@ -92,10 +92,10 @@ a{
                 font-weight: lighter;
             }
 
-            #index-back-heart{
+            .index-back-heart{
                 font-size: 20px;
                 
-                &:hover + #index-front-heart {
+                &:hover + .index-front-heart {
                     transition: 500ms;
                     transform : scale(1.4);
                     color:$color-primary;
@@ -103,7 +103,7 @@ a{
                 }
             }
 
-            #index-front-heart{
+            .index-front-heart{
                 color:white;
                 position: relative;
                 bottom:1.5px;

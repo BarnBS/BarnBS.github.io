@@ -325,22 +325,22 @@ a {
   font-size: 15px;
   font-weight: lighter;
 }
-.cards-restaurants__card-unit__card-body #index-back-heart {
+.cards-restaurants__card-unit__card-body .index-back-heart {
   font-size: 20px;
 }
-.cards-restaurants__card-unit__card-body #index-back-heart:hover + #index-front-heart {
+.cards-restaurants__card-unit__card-body .index-back-heart:hover + .index-front-heart {
   transition: 500ms;
   transform: scale(1.4);
   color: #9356DC;
   cursor: pointer;
 }
-.cards-restaurants__card-unit__card-body #index-front-heart {
+.cards-restaurants__card-unit__card-body .index-front-heart {
   color: white;
   position: relative;
   bottom: 1.5px;
   right: 22px;
 }
-.cards-restaurants__card-unit__card-body #index-front-heart:hover {
+.cards-restaurants__card-unit__card-body .index-front-heart:hover {
   transition: 500ms;
   transform: scale(1.4);
   color: #9356DC;
@@ -650,52 +650,22 @@ a {
     transform: translateY(0px);
   }
 }
-#first-dish {
+.first-dish {
   animation: appear 1000ms forwards;
   animation-delay: 200ms;
 }
 
-#second-dish {
+.second-dish {
   animation: appear 1000ms forwards;
   animation-delay: 400ms;
 }
 
-#third-dish {
+.third-dish {
   animation: appear 1000ms forwards;
   animation-delay: 600ms;
 }
 
-#fourth-dish {
-  animation: appear 1000ms forwards;
-  animation-delay: 800ms;
-}
-
-#fifth-dish {
-  animation: appear 1000ms forwards;
-  animation-delay: 400ms;
-}
-
-#sixth-dish {
-  animation: appear 1000ms forwards;
-  animation-delay: 600ms;
-}
-
-#seventh-dish {
-  animation: appear 1000ms forwards;
-  animation-delay: 200ms;
-}
-
-#eighth-dish {
-  animation: appear 1000ms forwards;
-  animation-delay: 400ms;
-}
-
-#ninth-dish {
-  animation: appear 1000ms forwards;
-  animation-delay: 600ms;
-}
-
-#tenth-dish {
+.fourth-dish {
   animation: appear 1000ms forwards;
   animation-delay: 800ms;
 }

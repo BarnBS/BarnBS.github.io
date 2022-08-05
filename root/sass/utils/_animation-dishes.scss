@@ -34,52 +34,22 @@ $delay:(
 //     }
 // };
 
-#first-dish{
+.first-dish{
     animation :appear 1000ms forwards;
     animation-delay: map-get($delay,first-dish);
 }
 
-#second-dish{
+.second-dish{
     animation : appear 1000ms forwards;
     animation-delay: map-get($delay,second-dish);
 }
 
-#third-dish{
+.third-dish{
     animation : appear 1000ms forwards;
     animation-delay: map-get($delay,third-dish);
 }
 
-#fourth-dish{
-    animation : appear 1000ms forwards;
-    animation-delay: map-get($delay,fourth-dish);
-}
-
-#fifth-dish{
-    animation : appear 1000ms forwards;
-    animation-delay: map-get($delay,second-dish);
-}
-
-#sixth-dish{
-    animation : appear 1000ms forwards;
-    animation-delay: map-get($delay,third-dish);
-}
-
-#seventh-dish{
-    animation : appear 1000ms forwards;
-    animation-delay: map-get($delay,first-dish);
-}
-
-#eighth-dish{
-    animation : appear 1000ms forwards;
-    animation-delay: map-get($delay,second-dish);
-}
-
-#ninth-dish{
-    animation : appear 1000ms forwards;
-    animation-delay: map-get($delay,third-dish);
-}
-
-#tenth-dish{
+.fourth-dish{
     animation : appear 1000ms forwards;
     animation-delay: map-get($delay,fourth-dish);
 }
