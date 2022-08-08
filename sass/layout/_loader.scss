@@ -12,11 +12,17 @@
     margin-left: -100px;
     gap:20px;
     opacity: 0;
-    animation: opacity 3000ms ease-out;
+    animation: global-opacity 3000ms ease-out;
 
     img{
         width:200px;
-        animation: scaled 1500ms infinite;
+        animation: scaled 2000ms infinite;
+    }
+
+    #back{
+        position: absolute;
+        top:45px;
+        animation: fading 2000ms infinite;
     }
 
     &__location{
@@ -31,55 +37,49 @@
         &__content{
             align-self: center;
             @include main-font;
+            width:200px;
             font-weight: 500;
+            margin-left: 60px;
+            padding-top: 20px;
+            color : $color-secondary;
         }
     }
 
-    .loader__location__content{
-        width:200px;
-        margin-left: 60px;
-        padding-top: 20px;
-        @include main-font;
-        color : $color-secondary;
-    }
+    // &__loading{
+    //     display: flex;
+    //     flex-direction: row;
+    //     margin-left: 30px;
+    //     padding-top: 20px;
+    //     @include main-font;
+    //     color : $color-primary;
 
-    .loader__loading{
-        width:200px;
-        margin-left: 30px;
-        padding-top: 20px;
-        @include main-font;
-        color : $color-primary;
-
-        &__ball{
-            position: relative;
-            top:-2px;
-            font-size: 50%;
-            border-radius: 25px;
-            padding:1px;
-            padding-right: 6px;
-            padding-left: 6px;
-            margin-left: 10px;
-            background:linear-gradient($color-secondary,$color-primary);
-
-            
-            // .first{
-            //     animation: bounce 300ms infinite;
-            // }
-
-            // .second{
-            //     animation-delay:200ms;
-            //     animation: bounce 300ms infinite;
-            // }
-
-            // .third{
-            //     animation-delay:400ms;
-            //     animation: bounce 300ms infinite;
-            // }
-        }
-
-
-    }
+    //     &__ball{
+    //         position: relative;
+    //         top:-2px;
+    //         font-size: 40%;
+    //         border-radius: 25px;
+    //         padding-right: 10px;
+    //         padding-left: 10px;
+    //         margin-left: 10px;
+    //         background:linear-gradient($color-secondary,$color-primary);
+    //     }
+    // }
 }
+
+// #first{
+//     animation:bounce 1000ms infinite;
+// }
+
+// #second{
+//     animation-delay: 500ms;
+//     animation:bounce 1000ms infinite;
+// }
+
+// #third{
+//     animation-delay: 1000ms;
+//     animation:bounce 1000ms infinite;
+// }
+
 
 @keyframes scaled {
     0%{transform:scale(1);}
@@ -87,7 +87,7 @@
     100%{transform: scale(1);}
 }
 
-@keyframes opacity{
+@keyframes global-opacity{
     0%{
         opacity: 1;
     }
@@ -115,10 +115,22 @@
     }
 }
 
+@keyframes fading {
+    0%{transform: scale(1);
+        opacity: 1;}
+    100%{transform: scale(2);
+        opacity: 0;}
+}
+
 // @keyframes bounce{
 //     0%{
 //         transform: translateY(0px);
 //     }
-//     100%{
-//         transform: translateY(50px);
+//     50%{
+//         transform: translateY(-20px);
 //     }
+
+//     100%{
+//         transform: translateY(0px);
+//     }
+// }
