@@ -416,7 +416,7 @@ a {
   position: absolute;
   right: 20px;
 }
-.menu-section__titre #back-heart:hover + #front-heart {
+.menu-section__titre #back-heart:active + #front-heart {
   transition: 500ms;
   transform: scale(1.5);
   color: #9356DC;
@@ -433,7 +433,7 @@ a {
   transform: scale(1);
   cursor: pointer;
 }
-.menu-section__titre #front-heart:hover {
+.menu-section__titre #front-heart:active {
   transition: 500ms;
   transform: scale(1.5);
   color: #9356DC;

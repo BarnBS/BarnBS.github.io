@@ -68,7 +68,7 @@
             position: absolute;
             right:20px;
             
-            &:hover + #front-heart{
+            &:active + #front-heart{
                 transition: 500ms;
                 transform : scale(1.5);
                 color: $color-primary;
@@ -87,7 +87,7 @@
             transform: scale(1);
             cursor:pointer;
 
-            &:hover{
+            &:active{
                 transition: 500ms;
                 transform : scale(1.5);
                 color: $color-primary;
