@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin:auto;
+    background-color: darken(grey,32%);
+    @include main-font;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    img{
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    a,i{
+        display: flex;
+        gap:10px;
+        color:white;
+    }
+
+    a{
+        padding-bottom: 10px;
+    }
+}

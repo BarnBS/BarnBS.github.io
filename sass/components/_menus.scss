@@ -1,0 +1,251 @@
+.restaurant-image{
+
+    img{
+        object-fit: cover;
+        width:100%;
+        height: 250px;
+    }
+}
+
+.menu-section{
+    position:relative;
+    top : -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+    background-color: $lightgrey;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin-bottom: -60px;
+
+    @media  screen and (min-width:map-get($breakpoints,desktop)) {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:100px repeat(1, 1fr) 100px;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px; 
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    &__titre{
+        display: grid;
+        grid-template-columns: 1fr 40px 40px;
+        width: 100%;
+
+        @media screen and  (min-width:map-get($breakpoints,tablet)){
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+        @media  screen and (min-width:map-get($breakpoints,desktop)) {
+            grid-area: 1 / 1 / 2 / 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        h1{
+            @include title-font;
+
+            @media screen and  (min-width:map-get($breakpoints,tablet)){
+                align-self: center;
+            }
+        }
+
+        #back-heart{
+            display: flex;
+            overflow:hidden;
+            align-self: center;
+            justify-content: end;
+            font-size: 25px;
+            position: absolute;
+            right:20px;
+            
+            &:hover + #front-heart{
+                transition: 500ms;
+                transform : scale(1.5);
+                color: $color-primary;
+            }
+        }
+
+        #front-heart{
+            display: flex;
+            align-self: center;
+            justify-content: end;
+            font-size: 17px;
+            color:white;
+            position:absolute;
+            right:24px;
+            transition: 700ms;
+            transform: scale(1);
+            cursor:pointer;
+
+            &:hover{
+                transition: 500ms;
+                transform : scale(1.5);
+                color: $color-primary;
+            }
+
+        }
+    }
+
+    &__course{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width:100%;
+        gap:10px;
+        font-family: "Roboto";
+
+        @media  screen and (min-width:map-get($breakpoints,desktop)) {
+            #menu-section_course1 { grid-area: 2 / 1 / 3 / 2}
+            #menu-section_course2 { grid-area: 2 / 2 / 3 / 3;}
+            #menu-section_course3 { grid-area: 2 / 3 / 3 / 4;}
+        }
+
+        h2{
+            font-family: "Roboto";
+            font-size: smaller;
+            font-weight: 400;
+            margin-bottom: -5px;
+
+            @media screen and  (min-width:map-get($breakpoints,tablet)){
+                align-self: center;
+            }
+
+            span{
+                position: relative;
+                top:-10px;
+                font-size: 20px;
+                font-weight: 600;
+                color:$color-tertiary;
+            }
+        }
+
+        &__dish{
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-self: center;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 2px 2px 8px darken($lightgrey,10%);
+            width:100%;
+            height:60px;
+            padding: 10px;
+            opacity: 0;
+
+            @media screen and  (min-width:map-get($breakpoints,tablet)){
+                width: 560px;
+            }
+
+            @media screen and  (min-width:map-get($breakpoints,desktop)){
+                width: 100%;
+            }
+
+
+
+            &__body{
+                display: block;
+                width: 100%;
+                height:40px;
+                height: 100%;
+                
+                @media screen and  (min-width:map-get($breakpoints,desktop)){
+                    display: block;
+                }
+
+                &__title{
+                    font-weight: 600;
+                }
+
+                &__description{
+                    font-size: smaller;
+                }
+
+            }
+
+            &__price{
+                display: flex;
+                align-self: flex-end;
+                font-size: smaller;
+                position: relative;
+                left:40px;
+                font-weight: 600;
+                transition:transform 350ms;
+                margin-left: -40px;
+
+                @media screen and  (min-width:map-get($breakpoints,tablet)){
+                    margin-right: -50px;
+                    padding-right: 20px;
+                    position: relative;
+                    left:0px;
+                }
+
+                @media screen and  (min-width:map-get($breakpoints,desktop)){
+                    left:0;
+                    padding-right: 5px;
+                    margin-left: 15px;
+                }
+
+            }
+
+            &__check{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left:110px; //10px de padding
+                width: 70px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                background-color: $color-tertiary;
+                margin-top: -10px;
+                margin-bottom: -10px;
+                margin-left: -20px;
+                transition:transform 350ms;
+                transform-origin:-100% 0;
+
+                i{
+                    color:$color-tertiary;
+                    background-color: white;
+                    border-radius: 25px;
+                    padding: 3px;
+                    padding-left: 4px;
+                    padding-right: 4px;
+                }
+            }
+        }
+    }
+
+    a{
+        cursor: pointer;
+    }
+
+    &__commander{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 200px;
+        color: white;
+        font-family: "Roboto";
+        font-size: 15px;
+        background: linear-gradient($color-secondary, $color-primary );
+        border-radius: 25px;
+        padding: 13px;
+        margin-top: 30px;
+
+
+        @media  screen and (min-width:map-get($breakpoints,desktop)) {
+            margin-left: 20px;
+        }
+    }
+}

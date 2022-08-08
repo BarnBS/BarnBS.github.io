@@ -1,0 +1,55 @@
+@keyframes appear{
+    0%{
+        opacity:0;
+        transform: translateY(20px);
+        }
+    50%{
+        opacity:0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+$delay:(
+    first-dish:200ms,
+    second-dish:400ms,
+    third-dish:600ms,
+    fourth-dish:800ms,
+);
+
+// $numbers:(
+//     1:1,
+//     2:2,
+//     3:3,
+//     4:4,
+// );
+
+// @each $key in $numbers and $key in $delay{
+//     .menu-section__course:nth-child(map-get($numbers,$key)){
+//         animation :appear 1000ms forwards;
+//         animation-delay: map-get($delay,$key);
+//     }
+// };
+
+.first-dish{
+    animation :appear 1000ms forwards;
+    animation-delay: map-get($delay,first-dish);
+}
+
+.second-dish{
+    animation : appear 1000ms forwards;
+    animation-delay: map-get($delay,second-dish);
+}
+
+.third-dish{
+    animation : appear 1000ms forwards;
+    animation-delay: map-get($delay,third-dish);
+}
+
+.fourth-dish{
+    animation : appear 1000ms forwards;
+    animation-delay: map-get($delay,fourth-dish);
+}

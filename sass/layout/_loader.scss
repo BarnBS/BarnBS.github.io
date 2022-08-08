@@ -1,0 +1,124 @@
+.index-header, .index-main, .index-footer{
+    opacity: 0.1;
+    animation: full-appear 3000ms forwards;
+}
+
+.loader{
+    position: fixed;
+    top:35%;
+    left:50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -100px;
+    gap:20px;
+    opacity: 0;
+    animation: opacity 3000ms ease-out;
+
+    img{
+        width:200px;
+        animation: scaled 1500ms infinite;
+    }
+
+    &__location{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        color : darken(grey,20%);
+        margin-bottom: -15px;
+        margin-left: -10px;
+    
+        &__content{
+            align-self: center;
+            @include main-font;
+            font-weight: 500;
+        }
+    }
+
+    .loader__location__content{
+        width:200px;
+        margin-left: 60px;
+        padding-top: 20px;
+        @include main-font;
+        color : $color-secondary;
+    }
+
+    .loader__loading{
+        width:200px;
+        margin-left: 30px;
+        padding-top: 20px;
+        @include main-font;
+        color : $color-primary;
+
+        &__ball{
+            position: relative;
+            top:-2px;
+            font-size: 50%;
+            border-radius: 25px;
+            padding:1px;
+            padding-right: 6px;
+            padding-left: 6px;
+            margin-left: 10px;
+            background:linear-gradient($color-secondary,$color-primary);
+
+            
+            // .first{
+            //     animation: bounce 300ms infinite;
+            // }
+
+            // .second{
+            //     animation-delay:200ms;
+            //     animation: bounce 300ms infinite;
+            // }
+
+            // .third{
+            //     animation-delay:400ms;
+            //     animation: bounce 300ms infinite;
+            // }
+        }
+
+
+    }
+}
+
+@keyframes scaled {
+    0%{transform:scale(1);}
+    50%{transform:scale(1.3);}
+    100%{transform: scale(1);}
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes full-appear{
+    0%{
+        opacity: 0.1;
+    }
+
+    90%{
+        opacity: 0.1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+// @keyframes bounce{
+//     0%{
+//         transform: translateY(0px);
+//     }
+//     100%{
+//         transform: translateY(50px);
+//     }
