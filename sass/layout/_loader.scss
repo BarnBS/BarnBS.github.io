@@ -16,13 +16,13 @@
 
     img{
         width:200px;
-        animation: scaled 2000ms infinite;
+        animation: scaled 1500ms infinite;
     }
 
     #back{
         position: absolute;
         top:45px;
-        animation: fading 2000ms infinite;
+        animation: fading 1500ms infinite;
     }
 
     &__location{
@@ -45,40 +45,38 @@
         }
     }
 
-    // &__loading{
-    //     display: flex;
-    //     flex-direction: row;
-    //     margin-left: 30px;
-    //     padding-top: 20px;
-    //     @include main-font;
-    //     color : $color-primary;
+    &__loading{
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        padding-top: 20px;
+        @include main-font;
+        color : $color-primary;
 
-    //     &__ball{
-    //         position: relative;
-    //         top:-2px;
-    //         font-size: 40%;
-    //         border-radius: 25px;
-    //         padding-right: 10px;
-    //         padding-left: 10px;
-    //         margin-left: 10px;
-    //         background:linear-gradient($color-secondary,$color-primary);
-    //     }
-    // }
+        &__ball{
+            position: relative;
+            top:10px;
+            font-size: 40%;
+            border-radius: 25px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 10px;
+            background:linear-gradient($color-secondary,$color-primary);
+        }
+    }
 }
 
-// #first{
-//     animation:bounce 1000ms infinite;
-// }
+#first{
+    animation:1000ms bounce 0ms infinite;
+}
 
-// #second{
-//     animation-delay: 500ms;
-//     animation:bounce 1000ms infinite;
-// }
+#second{
+    animation:1000ms bounce 200ms infinite;
+}
 
-// #third{
-//     animation-delay: 1000ms;
-//     animation:bounce 1000ms infinite;
-// }
+#third{
+    animation:1000ms bounce 400ms infinite;
+}
 
 
 @keyframes scaled {
@@ -122,15 +120,19 @@
         opacity: 0;}
 }
 
-// @keyframes bounce{
-//     0%{
-//         transform: translateY(0px);
-//     }
-//     50%{
-//         transform: translateY(-20px);
-//     }
+@keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
 
-//     100%{
-//         transform: translateY(0px);
-//     }
-// }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+
