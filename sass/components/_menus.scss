@@ -73,6 +73,14 @@
                 transform : scale(1.5);
                 color: $color-primary;
             }
+
+            @media screen and  (min-width:map-get($breakpoints,tablet)){
+                &:hover + #front-heart{
+                    transition: 500ms;
+                    transform : scale(1.5);
+                    color: $color-primary;
+                }
+            }
         }
 
         #front-heart{
@@ -91,6 +99,14 @@
                 transition: 500ms;
                 transform : scale(1.5);
                 color: $color-primary;
+            }
+
+            @media screen and  (min-width:map-get($breakpoints,tablet)){
+                &:hover{
+                    transition: 500ms;
+                    transform : scale(1.5);
+                    color: $color-primary;
+                }
             }
 
         }
@@ -155,6 +171,7 @@
 
             &__body{
                 display: block;
+                white-space: nowrap;
                 width: 100%;
                 height:40px;
                 height: 100%;

@@ -421,6 +421,13 @@ a {
   transform: scale(1.5);
   color: #9356DC;
 }
+@media screen and (min-width: 600px) {
+  .menu-section__titre #back-heart:hover + #front-heart {
+    transition: 500ms;
+    transform: scale(1.5);
+    color: #9356DC;
+  }
+}
 .menu-section__titre #front-heart {
   display: flex;
   align-self: center;
@@ -437,6 +444,13 @@ a {
   transition: 500ms;
   transform: scale(1.5);
   color: #9356DC;
+}
+@media screen and (min-width: 600px) {
+  .menu-section__titre #front-heart:hover {
+    transition: 500ms;
+    transform: scale(1.5);
+    color: #9356DC;
+  }
 }
 .menu-section__course {
   display: flex;
@@ -501,6 +515,7 @@ a {
 }
 .menu-section__course__dish__body {
   display: block;
+  white-space: nowrap;
   width: 100%;
   height: 40px;
   height: 100%;
@@ -604,35 +619,70 @@ a {
     transform: rotate(360deg);
   }
 }
-.menu-section__course__dish:hover > .menu-section__course__dish__body {
+.menu-section__course__dish:active > .menu-section__course__dish__body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block;
 }
-.menu-section__course__dish:hover > .menu-section__course__dish__check {
+@media screen and (min-width: 600px) {
+  .menu-section__course__dish:hover > .menu-section__course__dish__body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 992px) {
+  .menu-section__course__dish:hover > .menu-section__course__dish__body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+}
+.menu-section__course__dish:active > .menu-section__course__dish__check {
   width: 100px;
   transform: translate(-100px, 0);
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 600px) {
   .menu-section__course__dish:hover > .menu-section__course__dish__check {
-    width: 30%;
-    height: 60px;
+    width: 100px;
+    transform: translate(-100px, 0);
   }
 }
-.menu-section__course__dish:hover > .menu-section__course__dish__price {
+@media screen and (min-width: 992px) {
+  .menu-section__course__dish:hover > .menu-section__course__dish__check {
+    width: 100px;
+    transform: translate(-100px, 0);
+  }
+}
+.menu-section__course__dish:active > .menu-section__course__dish__price {
   transition: 350ms;
   transform: translate(-60px, 0);
   padding-left: 30px;
   margin-left: 10px;
 }
 @media screen and (min-width: 992px) {
-  .menu-section__course__dish:hover > .menu-section__course__dish__price {
+  .menu-section__course__dish:active > .menu-section__course__dish__price {
     padding-left: 60px;
   }
 }
-.menu-section__course__dish:hover i {
+@media screen and (min-width: 600px) {
+  .menu-section__course__dish:hover > .menu-section__course__dish__price {
+    transition: 350ms;
+    transform: translate(-60px, 0);
+    padding-left: 30px;
+    margin-left: 10px;
+  }
+}
+.menu-section__course__dish:active i {
   animation: rotate360 350ms;
+}
+@media screen and (min-width: 600px) {
+  .menu-section__course__dish:hover i {
+    animation: rotate360 350ms;
+  }
 }
 
 @keyframes appear {
