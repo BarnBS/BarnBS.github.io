@@ -328,7 +328,7 @@ a {
 .cards-restaurants__card-unit__card-body .index-back-heart {
   font-size: 20px;
 }
-.cards-restaurants__card-unit__card-body .index-back-heart:hover + .index-front-heart {
+.cards-restaurants__card-unit__card-body .index-back-heart:active + .index-front-heart {
   transition: 500ms;
   transform: scale(1.4);
   color: #9356DC;
@@ -340,7 +340,7 @@ a {
   bottom: 1.5px;
   right: 22px;
 }
-.cards-restaurants__card-unit__card-body .index-front-heart:hover {
+.cards-restaurants__card-unit__card-body .index-front-heart:active {
   transition: 500ms;
   transform: scale(1.4);
   color: #9356DC;
@@ -422,7 +422,7 @@ a {
   color: #9356DC;
 }
 @media screen and (min-width: 600px) {
-  .menu-section__titre #back-heart:hover + #front-heart {
+  .menu-section__titre #back-heart:active + #front-heart {
     transition: 500ms;
     transform: scale(1.5);
     color: #9356DC;
@@ -446,7 +446,7 @@ a {
   color: #9356DC;
 }
 @media screen and (min-width: 600px) {
-  .menu-section__titre #front-heart:hover {
+  .menu-section__titre #front-heart:active {
     transition: 500ms;
     transform: scale(1.5);
     color: #9356DC;

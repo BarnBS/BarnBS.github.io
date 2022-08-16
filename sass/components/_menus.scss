@@ -68,14 +68,14 @@
             position: absolute;
             right:20px;
             
-            &:focus + #front-heart{
+            &:active + #front-heart{
                 transition: 500ms;
                 transform : scale(1.5);
                 color: $color-primary;
             }
 
             @media screen and  (min-width:map-get($breakpoints,tablet)){
-                &:focus + #front-heart{
+                &:active + #front-heart{
                     transition: 500ms;
                     transform : scale(1.5);
                     color: $color-primary;
@@ -95,14 +95,14 @@
             transform: scale(1);
             cursor:pointer;
 
-            &:focus{
+            &:active{
                 transition: 500ms;
                 transform : scale(1.5);
                 color: $color-primary;
             }
 
             @media screen and  (min-width:map-get($breakpoints,tablet)){
-                &:focus{
+                &:active{
                     transition: 500ms;
                     transform : scale(1.5);
                     color: $color-primary;
