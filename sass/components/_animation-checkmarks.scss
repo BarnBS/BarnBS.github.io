@@ -18,7 +18,7 @@
 
 
 .menu-section__course__dish{
-    &:active > &__body{
+    &:focus > &__body{
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -45,7 +45,7 @@
 
 
 .menu-section__course__dish{
-    &:active > &__check{
+    &:target > &__check{
         width: 100px;
         transform: translate(-100px,0) ;
     }
@@ -70,7 +70,7 @@
 
     .menu-section__course__dish {
 
-        &:active >  &__price{
+        &:target >  &__price{
             transition: 350ms;
             transform: translate(-60px,0) ;
             padding-left: 30px;

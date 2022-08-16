@@ -95,7 +95,7 @@ a{
             .index-back-heart{
                 font-size: 20px;
                 
-                &:hover + .index-front-heart {
+                &:focus + .index-front-heart {
                     transition: 500ms;
                     transform : scale(1.4);
                     color:$color-primary;
@@ -109,7 +109,7 @@ a{
                 bottom:1.5px;
                 right:22px;
 
-                &:hover {
+                &:focus {
                     transition: 500ms;
                     transform : scale(1.4);
                     color:$color-primary;
