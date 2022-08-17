@@ -102,7 +102,10 @@ a{
                 &:active + .index-front-heart {
                     transition: 500ms;
                     transform : scale(1.4);
-                    color:variables.$color-primary;
+                    color:transparent;
+                    background-image: linear-gradient(variables.$color-secondary, variables.$color-primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
                     cursor:pointer;
                 }
             }
@@ -112,11 +115,15 @@ a{
                 position: relative;
                 bottom:1.5px;
                 right:22px;
+                transform: scale(0);
 
                 &:active {
                     transition: 500ms;
                     transform : scale(1.4);
-                    color:variables.$color-primary;
+                    color:transparent;
+                    background-image: linear-gradient(variables.$color-secondary, variables.$color-primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
                 }
             }
         }

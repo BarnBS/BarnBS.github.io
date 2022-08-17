@@ -330,7 +330,10 @@ a {
 .cards-restaurants__card-unit__card-body .index-back-heart:active + .index-front-heart {
   transition: 500ms;
   transform: scale(1.4);
-  color: #9356DC;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
   cursor: pointer;
 }
 .cards-restaurants__card-unit__card-body .index-front-heart {
@@ -338,11 +341,15 @@ a {
   position: relative;
   bottom: 1.5px;
   right: 22px;
+  transform: scale(0);
 }
 .cards-restaurants__card-unit__card-body .index-front-heart:active {
   transition: 500ms;
   transform: scale(1.4);
-  color: #9356DC;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .restaurant-image img {
@@ -418,13 +425,19 @@ a {
 .menu-section__titre #back-heart:active + #front-heart {
   transition: 500ms;
   transform: scale(1.5);
-  color: #9356DC;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 @media screen and (min-width: 600px) {
   .menu-section__titre #back-heart:active + #front-heart {
     transition: 500ms;
     transform: scale(1.5);
-    color: #9356DC;
+    color: transparent;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 }
 .menu-section__titre #front-heart {
@@ -436,19 +449,25 @@ a {
   position: absolute;
   right: 24px;
   transition: 700ms;
-  transform: scale(1);
+  transform: scale(0);
   cursor: pointer;
 }
 .menu-section__titre #front-heart:active {
   transition: 500ms;
   transform: scale(1.5);
-  color: #9356DC;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 @media screen and (min-width: 600px) {
   .menu-section__titre #front-heart:active {
     transition: 500ms;
     transform: scale(1.5);
-    color: #9356DC;
+    color: transparent;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 }
 .menu-section__course {

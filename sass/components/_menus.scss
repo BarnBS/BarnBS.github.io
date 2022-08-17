@@ -75,14 +75,20 @@
             &:active + #front-heart{
                 transition: 500ms;
                 transform : scale(1.5);
-                color: variables.$color-primary;
+                color:transparent;
+                background-image: linear-gradient(variables.$color-secondary, variables.$color-primary);
+                background-clip: text;
+                -webkit-background-clip: text;
             }
 
             @media screen and  (min-width:map-get(breakpoint.$breakpoints,tablet)){
                 &:active + #front-heart{
                     transition: 500ms;
                     transform : scale(1.5);
-                    color: variables.$color-primary;
+                    color:transparent;
+                    background-image: linear-gradient(variables.$color-secondary, variables.$color-primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
                 }
             }
         }
@@ -96,20 +102,26 @@
             position:absolute;
             right:24px;
             transition: 700ms;
-            transform: scale(1);
+            transform: scale(0);
             cursor:pointer;
 
             &:active{
                 transition: 500ms;
                 transform : scale(1.5);
-                color: variables.$color-primary;
+                color:transparent;
+                background-image: linear-gradient(variables.$color-secondary, variables.$color-primary);
+                background-clip: text;
+                -webkit-background-clip: text;;
             }
 
             @media screen and  (min-width:map-get(breakpoint.$breakpoints,tablet)){
                 &:active{
                     transition: 500ms;
                     transform : scale(1.5);
-                    color: variables.$color-primary;
+                    color:transparent;
+                    background-image: linear-gradient(variables.$color-secondary, variables.$color-primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
                 }
             }
 
