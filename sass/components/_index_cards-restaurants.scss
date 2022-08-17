@@ -1,3 +1,7 @@
+@use "../utils/variables" as variables;
+@use "../base/_polices.scss" as police;
+@use "../utils/_map-breakpoints.scss" as breakpoint;
+
 a{
     text-decoration: none;
     color: black;
@@ -9,16 +13,16 @@ a{
     justify-content: center;
     align-items: center;
     width:100%;
-    background-color: $lightgrey;
-    @include main-font;
+    background-color: variables.$lightgrey;
+    @include police.main-font;
     padding-top: 30px;
     padding-bottom: 30px;
 
-    @media screen and (min-width : map-get($breakpoints,tablet)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,tablet)) {
         grid-area: 1 / 2 / 5 / 3;
     }
 
-    @media screen and (min-width : map-get($breakpoints,desktop)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
         grid-area: 3 / 1 / 5 / 3;
         flex-direction: row;
         justify-content: center;
@@ -31,13 +35,13 @@ a{
         align-self: flex-start;
         padding:20px;
         font-size: 20px;
-        @include main-font;
+        @include police.main-font;
 
-        @media screen and (min-width : map-get($breakpoints,tablet)) {
+        @media screen and (min-width : map-get(breakpoint.$breakpoints,tablet)) {
             align-self: center;
         }
 
-        @media screen and (min-width : map-get($breakpoints,desktop)) {
+        @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
             display: none;
         }
 
@@ -48,15 +52,15 @@ a{
         top:20px;
         left:85px;
         font-size: 90%;
-        @include main-font;
-        color: darken($color-tertiary,40%);
-        background-color: $color-tertiary;
+        @include police.main-font;
+        color: darken(variables.$color-tertiary,40%);
+        background-color: variables.$color-tertiary;
         padding:4px;
         padding-left: 8px;
         padding-right: 8px;
         margin-bottom: -25px;
 
-            @media screen and (min-width : map-get($breakpoints,desktop)) {
+            @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
                 left : 290px;
                 margin-left: -95px;
             }
@@ -65,7 +69,7 @@ a{
     &__card-unit{
         width: auto;
         border-radius: 10px;
-        box-shadow: 2px 2px 6px darken($lightgrey,10%);
+        box-shadow: 2px 2px 6px darken(variables.$lightgrey,10%);
         margin-bottom: 20px;
 
         img{
@@ -98,7 +102,7 @@ a{
                 &:active + .index-front-heart {
                     transition: 500ms;
                     transform : scale(1.4);
-                    color:$color-primary;
+                    color:variables.$color-primary;
                     cursor:pointer;
                 }
             }
@@ -112,7 +116,7 @@ a{
                 &:active {
                     transition: 500ms;
                     transform : scale(1.4);
-                    color:$color-primary;
+                    color:variables.$color-primary;
                 }
             }
         }

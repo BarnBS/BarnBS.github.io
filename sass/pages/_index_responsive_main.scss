@@ -1,6 +1,8 @@
+@use "../utils/_map-breakpoints.scss" as breakpoint;
+
 .index-main{
 
-    @media screen and (min-width : map-get($breakpoints,tablet)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,tablet)) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -8,7 +10,7 @@
         grid-row-gap: 0px; 
     }
 
-    @media screen and (min-width : map-get($breakpoints,desktop)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
         max-width: 1400px;
         margin:auto;
         display: grid;

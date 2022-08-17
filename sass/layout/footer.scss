@@ -1,10 +1,12 @@
+@use "../base/_polices.scss" as police;
+
 footer{
     display: flex;
     flex-direction: column;
     max-width: 1400px;
     margin:auto;
     background-color: darken(grey,32%);
-    @include main-font;
+    @include police.main-font;
     font-size: 14px;
     padding-top: 20px;
     padding-bottom: 30px;

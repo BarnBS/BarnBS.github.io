@@ -1,3 +1,6 @@
+@use "../base/_polices.scss" as police;
+@use "../utils/variables" as variables;
+
 .index-header, .index-main, .index-footer{
     opacity: 0.1;
     animation: full-appear 3000ms forwards;
@@ -36,12 +39,12 @@
     
         &__content{
             align-self: center;
-            @include main-font;
+            @include police.main-font;
             width:200px;
             font-weight: 500;
             margin-left: 60px;
             padding-top: 20px;
-            color : $color-secondary;
+            color : variables.$color-secondary;
         }
     }
 
@@ -50,8 +53,8 @@
         flex-direction: row;
         margin-left: 30px;
         padding-top: 20px;
-        @include main-font;
-        color : $color-primary;
+        @include police.main-font;
+        color : variables.$color-primary;
 
         &__ball{
             position: relative;
@@ -61,7 +64,7 @@
             padding-right: 10px;
             padding-left: 10px;
             margin-left: 10px;
-            background:linear-gradient($color-secondary,$color-primary);
+            background:linear-gradient(variables.$color-secondary,variables.$color-primary);
         }
     }
 }

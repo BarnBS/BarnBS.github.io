@@ -1,4 +1,4 @@
-@import "css/base/_polices.css";
+@use "../utils/_map-breakpoints.scss" as breakpoint;
 
 header{
     max-width: 1400px;
@@ -16,7 +16,7 @@ header{
             cursor: pointer;
         }
 
-        @media screen and (min-width : map-get($breakpoints,desktop)) {
+        @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
             position: relative;
             top: 5px;
             left:-25px;
@@ -28,7 +28,7 @@ header{
         justify-content: center;
         width: 100%;
 
-        @media screen and (min-width : map-get($breakpoints,desktop)) {
+        @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
             justify-content: flex-start;
             padding-left: 60px;
         }

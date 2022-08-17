@@ -1,27 +1,27 @@
-@import "utils/_map-breakpoints.scss";
+@use "utils/variables" as variables;
 
-@import "utils/variables";
+@use "utils/_map-breakpoints.scss" as breakpoint;
 
-@import "base/_polices.scss";
+@use "base/_polices.scss" as police;
 
-@import "base/_typography.scss";
+@use "base/_typography.scss" as typo;
 
-@import "pages/index_responsive_main";
+@use "pages/index_responsive_main" as main-responsive;
 
-@import "layout/header.scss";
+@use "layout/header.scss" as header;
 
-@import "components/location&exploration.scss";
+@use "components/location&exploration.scss" as location-exploration;
 
-@import "components/_index_fonctionnement.scss";
+@use "components/_index_fonctionnement.scss" as fonctionnement;
 
-@import "components/_index_cards-restaurants.scss";
+@use "components/_index_cards-restaurants.scss" as index-cards;
 
-@import "components/_menus.scss";
+@use "components/_menus.scss" as menus;
 
-@import "components/animation-checkmarks";
+@use "components/animation-checkmarks" as anim-checkmarks;
 
-@import "components/animation-dishes";
+@use "components/animation-dishes" as anim-dishes;
 
-@import "layout/loader";
+@use "layout/loader" as loader;
 
-@import "layout/footer.scss";
+@use "layout/footer.scss" as footer;

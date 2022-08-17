@@ -1,12 +1,16 @@
+@use "../utils/variables" as variables;
+@use "../utils/_map-breakpoints.scss" as breakpoint;
+@use "../base/_polices.scss" as police;
+
 .section-location-exploration{
     display: grid;
     grid-template-rows: 60px 260px;
 
-    @media screen and (min-width : map-get($breakpoints,tablet)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,tablet)) {
         grid-area: 1 / 1 / 3 / 2;
     }
 
-    @media screen and (min-width : map-get($breakpoints,desktop)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
         grid-area: 1 / 1 / 3 / 2;
     }
 }
@@ -16,15 +20,15 @@
     flex-direction: row;
     justify-content: center;
     width:100%;
-    background-color: darken($lightgrey,5%);
+    background-color: darken(variables.$lightgrey,5%);
     color : darken(grey,20%);
     border-top: 2px solid none;
-    box-shadow: 0px 3px 3px darken($lightgrey,10%) inset;
+    box-shadow: 0px 3px 3px darken(variables.$lightgrey,10%) inset;
     padding: 15px;
 
     &__content{
         align-self: center;
-        @include main-font;
+        @include police.main-font;
         font-weight: 500;
     }
 
@@ -40,7 +44,7 @@
     justify-content: center;
     align-items: center;
     width:100%;
-    background-color: $lightgrey;
+    background-color: variables.$lightgrey;
     padding-top: 30px;
     padding-bottom:50px;
     margin-bottom: 20px;
@@ -51,7 +55,7 @@
             justify-content: center;
             align-items: center;
             font-size: 23px;
-            @include main-font;
+            @include police.main-font;
             margin-bottom: 10px;
         }
         &__description{
@@ -59,7 +63,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            @include main-font;
+            @include police.main-font;
             font-size: 16px;
             color : grey;
             margin-bottom: 30px;
@@ -68,11 +72,11 @@
             display: flex;
             justify-content: center;
             text-decoration: none;
-            font-family: "Roboto";
+            @include police.main-font;
             font-weight: 400;
             font-size: 15px;
             color:white;
-            background: linear-gradient($color-secondary, $color-primary );
+            background: linear-gradient(variables.$color-secondary, variables.$color-primary);
             border: 0px;
             border-radius: 25px;
             padding:13px;
@@ -80,7 +84,7 @@
             padding-right: 20px;
 
             &:hover{
-                box-shadow: 3px 3px 8px darken($lightgrey, 40%);
+                box-shadow: 3px 3px 8px darken(variables.$lightgrey, 40%);
             }
 
             &:focus{

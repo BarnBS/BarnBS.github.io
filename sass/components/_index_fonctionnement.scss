@@ -1,19 +1,23 @@
+@use "../utils/variables" as variables;
+@use "../base/_polices.scss" as police;
+@use "../utils/_map-breakpoints.scss" as breakpoint;
+
 .fonctionnement{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width:100%;
-    @include main-font;
+    @include police.main-font;
     margin-bottom: 40px;
 
-    @media screen and (min-width : map-get($breakpoints,tablet)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,tablet)) {
         grid-area: 3 / 1 / 5 / 2;
         position:relative;
         top:-260px;
     }
 
-    @media screen and (min-width : map-get($breakpoints,desktop)) {
+    @media screen and (min-width : map-get(breakpoint.$breakpoints,desktop)) {
         grid-area: 1 / 2 / 3 / 3;
         top:0;
     }
@@ -23,7 +27,7 @@
         padding:20px;
         font-size: 20px;
 
-        @media screen and (min-width : map-get($breakpoints,tablet)) {
+        @media screen and (min-width : map-get(breakpoint.$breakpoints,tablet)) {
             align-self: center;
         }
     }
@@ -37,16 +41,16 @@
             justify-content: flex-start;
             gap:20px;
             border-radius: 20px;
-            background-color: $lightgrey;
-            box-shadow: 2px 2px 8px darken($lightgrey,10%);
+            background-color: variables.$lightgrey;
+            box-shadow: 2px 2px 8px darken(variables.$lightgrey,10%);
             padding:18px;
             padding-right: 50px;
             margin-bottom: 15px;
 
             &:hover{
-                background-color: lighten($color-primary,35%);
+                background-color: lighten(variables.$color-primary,35%);
                 i{
-                    color: $color-primary;
+                    color: variables.$color-primary;
                 }
             }
 
@@ -60,7 +64,7 @@
                 padding-left:7px;
                 padding-right: 7px;
                 border-radius: 15px;;
-                background-color: $color-primary;
+                background-color: variables.$color-primary;
             }
 
             & p{
