@@ -751,7 +751,6 @@ a {
 }
 .loader #back {
   position: absolute;
-  top: 45px;
   animation: fading 1500ms infinite;
 }
 .loader__location {
