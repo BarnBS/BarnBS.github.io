@@ -682,7 +682,7 @@ a {
 }
 @media screen and (min-width: 992px) {
   .menu-section__course__dish:hover > .menu-section__course__dish__price {
-    padding-left: -20px;
+    /* padding-left: -20px; */
   }
 }
 
