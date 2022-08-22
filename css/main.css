@@ -680,11 +680,11 @@ a {
     transform: translate(-60px, 0);
   }
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .menu-section__course__dish:hover > .menu-section__course__dish__price {
-    /* padding-left: -20px; */
+    padding-left: -20px;
   }
-}
+} */
 
 .menu-section__course__dish:active i {
   animation: rotate360 350ms;
